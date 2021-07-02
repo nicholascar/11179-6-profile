@@ -1,0 +1,691 @@
+PREFIX : <https://w3id.org/profile/td/>
+PREFIX cs: <https://w3id.org/profile/td>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+cs: 
+    a skos:ConceptScheme ;
+    skos:prefLabel "11179-6 Terms & Definitions"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-8742-7730> ;
+    dcterms:publisher <https://orcid.org/0000-0002-8742-7730> ;
+    dcterms:created "2021-07-02"^^xsd:date ;
+    dcterms:modified "2021-07-02"^^xsd:date ;
+    dcterms:provenance "All information here extracted from the ISO 11179-6 standard document"@en ;
+    skos:definition "This vocabulary contains the items in Part 3, 'Terms and definitions' of 11179-6"@en ;
+    skos:hasTopConcept
+        :administered-item ,
+        :administrative-information ,
+        :administrative-status ,
+        :attached-item ,
+        :classifiable-item ,
+        :classification-scheme ,
+        :contact ,
+        :data ,
+        :data-element ,
+        :designation ,
+        :designatable-item ,
+        :identified-item ,
+        :identifier ,
+        :identification ,
+        :identification-scheme ,
+        :individual ,
+        :international-code-designator ,
+        :international-code-designator-value ,
+        :international-registration-data-identifier ,
+        :item-identifier ,
+        :item-registration-authority-identifier ,
+        :metadata ,
+        :metadata-item ,
+        :metadata-object ,
+        :metadata-register ,
+        :metadata-registry ,
+        :namespace ,
+        :opi-source-indicator ,
+        :opis-value ,
+        :organization ,
+        :organization-identification-scheme ,
+        :organization-identifier ,
+        :organization-part ,
+        :organization-part-identifier ,
+        :organization-person ,
+        :person ,
+        :register ,
+        :registered-item ,
+        :registrar ,
+        :registration ,
+        :registration-acting-body ,
+        :registration-authority ,
+        :registration-authority-identifier ,
+        :registration-state ,
+        :registration-status ,
+        :registry ,
+        :registry-item ,
+        :registry-item-metadata ,
+        :role ,
+        :scoped-identifier ,
+        :stewardship ,
+        :stewardship-contact ,
+        :stewardship-organization ,
+        :submission ,
+        :submission-contact ,
+        :submission-organization ,
+        :version ;
+.
+
+<https://orcid.org/0000-0002-8742-7730>
+    a sdo:Person ;
+    sdo:name "Nichoals J. Car" ;
+    sdo:email "nicholas.car@surroundaustralia.com"^^xsd:anyURI ;
+.
+
+
+:administered-item
+    a skos:Concept ;
+    skos:notation "3.1" ;
+    skos:prefLabel "administered item"@en ;
+    skos:definition "registered item (3.38) for which administrative information (3.2) is recorded"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:administrative-information
+    a skos:Concept ;
+    skos:notation "3.2" ;
+    skos:prefLabel "administrative information"@en ;
+    skos:definition "<metadata registry> information about the administration of an item in a metadata registry (3.26)"@en ;
+    skos:example "Creation date, last change date, origin, change description, and explanatory comment."@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:administrative-status
+    a skos:Concept ;
+    skos:notation "3.3" ;
+    skos:prefLabel "administrative status"@en ;
+    skos:definition "designation (3.10) of the status in the administrative process of a Registration Authority (3.42)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:attached-item
+    a skos:Concept ;
+    skos:notation "3.4" ;
+    skos:prefLabel "attached item"@en ;
+    skos:definition "registered item (3.38) for which administrative information (3.2) is recorded in another registered item"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:classifiable-item
+    a skos:Concept ;
+    skos:notation "3.5" ;
+    skos:prefLabel "classifiable item"@en ;
+    skos:definition "metadata item (3.23) of a type for which classification is supported in a given metadata registry (3.26)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:classification-scheme
+    a skos:Concept ;
+    skos:notation "3.6" ;
+    skos:prefLabel "classification scheme"@en ;
+    skos:definition "descriptive information for an arrangement or division of objects into groups based on criteria such as characteristics, which the objects have in common"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:contact
+    a skos:Concept ;
+    skos:notation "3.7" ;
+    skos:prefLabel "contact"@en ;
+    skos:definition "instance of a role (3.49) of an individual (3.16) or organization (3.30) or organization part (3.33) or organization Person (3.35) to or from whom an information item(s), a material object(s) and/or person(s) can be sent in a specified context"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:data
+    a skos:Concept ;
+    skos:notation "3.8" ;
+    skos:prefLabel "data"@en ;
+    skos:definition "re-interpretable representation of information in a formalized manner suitable for communication, interpretation, or processing"@en ;
+    skos:note "Data can be processed by human or automatic means."@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:data-element
+    a skos:Concept ;
+    skos:notation "3.9" ;
+    skos:prefLabel "data element"@en ;
+    skos:definition "<organization of data> unit of data (3.8) that is considered in context to be indivisible"@en ;
+    skos:example "The data element “age of a person” with values consisting of all combinations of three decimal digits."@en ;
+    skos:note "The definition states that a data element is “indivisible” in some context. This means that it is possible that a data element considered indivisible in one context (e.g., telephone number) might be divisible in another context (e.g., country code, area code, local number)."@n ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:designation
+    a skos:Concept ;
+    skos:notation "3.10" ;
+    skos:prefLabel "designation"@en ;
+    skos:definition "representation of a concept by a sign which denotes it"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:designatable-item
+    a skos:Concept ;
+    skos:notation "3.11" ;
+    skos:prefLabel "designatable item"@en ;
+    skos:definition ""@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:identified-item
+    a skos:Concept ;
+    skos:notation "3.12" ;
+    skos:prefLabel "identified item"@en ;
+    skos:definition "metadata item (3.23) identified in a metadata registry (3.26)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:identifier
+    a skos:Concept ;
+    skos:notation "3.13" ;
+    skos:prefLabel "identifier"@en ;
+    skos:definition "<metadata registry> string used to unambiguously denote an identified item (3.12) within the scope of a specified namespace (3.27)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:identification
+    a skos:Concept ;
+    skos:notation "3.14" ;
+    skos:prefLabel "identification"@en ;
+    skos:definition "assignment of an unambiguous identifier (3.13) to an identified item (3.12) in a way that makes the assignment available to interested parties"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:identification-scheme
+    a skos:Concept ;
+    skos:notation "3.15" ;
+    skos:prefLabel "identification scheme"@en ;
+    skos:definition "system allocating identifiers (3.13) to registered objects"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:individual
+    a skos:Concept ;
+    skos:notation "3.16" ;
+    skos:prefLabel "individual"@en ;
+    skos:definition "single human being"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:international-code-designator
+    a skos:Concept ;
+    skos:notation "3.17" ;
+    skos:prefLabel "International Code Designator"@en ;
+    skos:altLabel "ICD" ;
+    skos:definition "identifier (3.13) of an organization identification scheme (3.31)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:international-code-designator-value
+    a skos:Concept ;
+    skos:notation "3.18" ;
+    skos:prefLabel "International Code Designator value"@en ;
+    skos:altLabel "ICD value" ;
+    skos:definition "identifier (3.13) allocated to a particular organization identification scheme (3.31)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:international-registration-data-identifier
+    a skos:Concept ;
+    skos:notation "3.19" ;
+    skos:prefLabel "international registration data identifier"@en ;
+    skos:altLabel "IRDI" ;
+    skos:definition "internationally unique identifier (3.13) for a identified item (3.12) as defined in the framework of ISO/IEC 11179"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:item-identifier
+    a skos:Concept ;
+    skos:notation "3.20" ;
+    skos:prefLabel "item identifier"@en ;
+    skos:definition "identifier (3.13) for an item"@en ;
+    skos:note "ISO/IEC 11179‑3:2013 uses the term scoped identifier (3.50) because each identifier is defined within the scope of a namespace (3.27)."@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:item-registration-authority-identifier
+    a skos:Concept ;
+    skos:notation "3.21" ;
+    skos:prefLabel "item registration authority identifier"@en ;
+    skos:definition "identifier (3.13) of the Registration Authority (3.42) registering the item"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:metadata
+    a skos:Concept ;
+    skos:notation "3.22" ;
+    skos:prefLabel "metadata"@en ;
+    skos:definition "data (3.8) that defines and describes other data"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:metadata-item
+    a skos:Concept ;
+    skos:notation "3.23" ;
+    skos:prefLabel "metadata item"@en ;
+    skos:definition "instance of a metadata object (3.24)"@en ;
+    skos:note "In all parts of ISO/IEC 11179, this term is applied only to instances of metadata objects described by the metamodel in ISO/IEC 11179‑3:2013, Clause 5 to Clause 11. Examples include instances of data elements, data element concepts, permissible values, etc."@en , "A metadata item has associated attributes, as appropriate for the metadata object it instantiates."@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:metadata-object
+    a skos:Concept ;
+    skos:notation "3.24" ;
+    skos:prefLabel "metadata object"@en ;
+    skos:definition "object type defined by a metamodel"@en ;
+    skos:note "In all parts of ISO/IEC 11179, this term is applied to metadata objects described by the metamodel in ISO/IEC 11179‑3:2013, Clause 5 to Clause 11. Examples include Data Elements, Data Element Concepts, Permissible Values, etc."@en , "The term also applies to instances of metadata objects described by the metamodels in the various parts of ISO/IEC 19763, which build upon the metamodel in ISO/IEC 11179‑3:2013."@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:metadata-register
+    a skos:Concept ;
+    skos:notation "3.25" ;
+    skos:prefLabel "metadata register"@en ;
+    skos:definition "information store or database maintained by a metadata registry (3.26)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:metadata-registry
+    a skos:Concept ;
+    skos:notation "3.26" ;
+    skos:prefLabel "metadata registry"@en ;
+    skos:altLabel "MDR"@en ;
+    skos:definition "information system for registering metadata (3.22)"@en ;
+    skos:note "The associated information store or database is known as a metadata register (3.25)."@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:namespace
+    a skos:Concept ;
+    skos:notation "3.27" ;
+    skos:prefLabel "namespace"@en ;
+    skos:definition "set of designations (3.10) and/or scoped identifiers (3.50) for a particular business need"@en ;
+    skos:note "The term namespace is used in this International Standard because it is in common use even though the concept is being applied to identifiers, as well as names."@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:opi-source-indicator
+    a skos:Concept ;
+    skos:notation "3.28" ;
+    skos:prefLabel "OPI Source Indicator"@en ;
+    skos:altLabel "OPIS" ;
+    skos:definition "data element (3.9) used to specify the source for the organization part identifier (3.34)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:opis-value
+    a skos:Concept ;
+    skos:notation "3.29" ;
+    skos:prefLabel "OPIS value"@en ;
+    skos:definition "particular value (digit or capital letter) taken by the OPIS (3.28) to designate the source of an organization part identifier (3.34)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:organization
+    a skos:Concept ;
+    skos:notation "3.30" ;
+    skos:prefLabel "organization"@en ;
+    skos:definition "unique framework of authority within which individuals (3.16) act, or are designated to act, towards some purpose"@en ;
+    skos:note """The kinds of organizations covered by ISO/IEC 6523‑1 include the following examples:
+a) an organization incorporated under law;
+b) an unincorporated organization or activity providing goods and/or services including the following:
+1) partnerships;
+2) social or other non-profit organizations or similar bodies in which ownership or control is vested in a group of individuals;
+3) sole proprietorships;
+4) governmental bodies;
+c) groupings of the above types of organizations where there is a need to identify these in information interchange."""@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:organization-identification-scheme
+    a skos:Concept ;
+    skos:notation "3.31" ;
+    skos:prefLabel "organization identification scheme"@en ;
+    skos:definition "identification scheme (3.15) dedicated to the unique identification of organizations (3.30)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:organization-identifier
+    a skos:Concept ;
+    skos:notation "3.32" ;
+    skos:prefLabel "organization identifier"@en ;
+    skos:definition "identifier (3.13) assigned to an organization within an organization identification scheme (3.31) and unique within that scheme"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:organization-part
+    a skos:Concept ;
+    skos:notation "3.33" ;
+    skos:prefLabel "organization part"@en ;
+    skos:definition "any department, service, or other entity within an organization (3.30) which needs to be identified for information exchange"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:organization-part-identifier
+    a skos:Concept ;
+    skos:notation "3.34" ;
+    skos:prefLabel "organization part identifier"@en ;
+    skos:definition "identifier (3.13) allocated to a particular organization part (3.33)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:organization-person
+    a skos:Concept ;
+    skos:notation "3.35" ;
+    skos:prefLabel "organization Person"@en ;
+    skos:definition "organization part (3.33) which has the properties of a Person (3.36) and thus is able to make commitments on behalf of that organization (3.30)"@en ;
+    skos:note "An organization can have one or more organization Persons." , "An organization Person is deemed to represent and act on behalf of the organization and to do so in a specified capacity." , "An organization Person can be a “natural person” such as an employee or officer of the organization." , "An organization Person can be a “legal person”, i.e., another organization." ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:person
+    a skos:Concept ;
+    skos:notation "3.36" ;
+    skos:prefLabel "Person"@en ;
+    skos:definition "entity, i.e. a natural or legal person, recognized by law as having legal rights and duties, able to make commitment(s), assume and fulfil resulting obligation(s), and able of being held accountable for its action(s)"@en ;
+    skos:note "Synonyms for 'legal person' include 'artificial person', 'body corporate', etc., depending on the terminology used in competent jurisdictions." , "Person is capitalized to indicate that it is being utilized as formally defined in the standards and to differentiate it from its day-to-day use." , "Minimum and common external constraints applicable to a business transaction often require one to differentiate among three common subtypes of Person, namely 'individual', 'organization', and 'public administration'." ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:register
+    a skos:Concept ;
+    skos:notation "3.37" ;
+    skos:prefLabel "register"@en ;
+    skos:definition "information store or database maintained by a registry (3.46)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:registered-item
+    a skos:Concept ;
+    skos:notation "3.38" ;
+    skos:prefLabel "registered item"@en ;
+    skos:definition "metadata item (3.23) that is recorded and managed in a metadata registry (3.26)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:registrar
+    a skos:Concept ;
+    skos:notation "3.39" ;
+    skos:prefLabel "registrar"@en ;
+    skos:definition "representative of a Registration Authority (3.42)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:registration
+    a skos:Concept ;
+    skos:notation "3.40" ;
+    skos:prefLabel "registration"@en ;
+    skos:definition "<metadata registry> inclusion of a metadata item (3.23) in a metadata registry (3.26)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:registration-acting-body
+    a skos:Concept ;
+    skos:notation "3.41" ;
+    skos:prefLabel "registration acting body"@en ;
+    skos:altLabel "RAB" ;
+    skos:definition "type of organization (3.30) participating in the registration (3.40) process of administered items (3.1)"@en ;
+    skos:note "Currently, there are three RABs: Registration Authority (RA) (3.42), Stewardship Organization (StO) (3.53), and Submitting Organization (SuO) (3.56)."@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:registration-authority
+    a skos:Concept ;
+    skos:notation "3.42" ;
+    skos:prefLabel "Registration Authority"@en ;
+    skos:altLabel "RA" ;
+    skos:definition "organization (3.30) responsible for maintaining a register (3.37)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:registration-authority-identifier
+    a skos:Concept ;
+    skos:notation "3.43" ;
+    skos:prefLabel "registration authority identifier"@en ;
+    skos:definition "identifier (3.11) assigned to a Registration Authority (3.8)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:registration-state
+    a skos:Concept ;
+    skos:notation "3.44" ;
+    skos:prefLabel "registration state"@en ;
+    skos:definition "information about the registration (3.40) of an administered item (3.1)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:registration-status
+    a skos:Concept ;
+    skos:notation "3.45" ;
+    skos:prefLabel "registration status"@en ;
+    skos:definition "designation (3.10) of the status in the registration life-cycle of an administered item (3.1)"@en ;
+    skos:note "Registration status is described in 4.4.2."@en ;    
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:registry
+    a skos:Concept ;
+    skos:notation "3.46" ;
+    skos:prefLabel "registry"@en ;
+    skos:definition "information system for registration (3.40)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:registry-item
+    a skos:Concept ;
+    skos:notation "3.47" ;
+    skos:prefLabel "registry item"@en ;
+    skos:definition "<general> item recorded in a registry (3.46)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:registry-item-metadata
+    a skos:Concept ;
+    skos:notation "3.48" ;
+    skos:prefLabel "registry item (metadata)"@en ;
+    skos:definition "<metadata registry> metadata item (3.23) recorded in a metadata registry (3.26)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:role
+    a skos:Concept ;
+    skos:notation "3.49" ;
+    skos:prefLabel "role"@en ;
+    skos:definition "specified responsibilities"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:scoped-identifier
+    a skos:Concept ;
+    skos:notation "3.50" ;
+    skos:prefLabel "scoped identifier"@en ;
+    skos:definition "identifier (3.13) of an identified item (3.12) within a specified namespace (3.27)"@en ;
+    skos:note "A namespace (3.27) provides the scope within which the scoped identifier uniquely identifies the identified item."@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:stewardship
+    a skos:Concept ;
+    skos:notation "3.51" ;
+    skos:prefLabel "stewardship"@en ;
+    skos:definition "<metadata> responsibility for the maintenance of administrative information (3.2) applicable to one or more administered items (3.1)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:stewardship-contact
+    a skos:Concept ;
+    skos:notation "3.52" ;
+    skos:prefLabel "stewardship contact"@en ;
+    skos:altLabel "steward"@en ;
+    skos:definition "contact (3.7) information associated with a stewardship (3.51)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:stewardship-organization
+    a skos:Concept ;
+    skos:notation "3.53" ;
+    skos:prefLabel "stewardship organization"@en ;
+    skos:altLabel "StO" ;
+    skos:definition "organization (3.30) that maintains stewardship (3.51) of an administered item (3.1)"@en ;
+    skos:note "In edition 2, this was called responsible organization."@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:submission
+    a skos:Concept ;
+    skos:notation "3.54" ;
+    skos:prefLabel "submission"@en ;
+    skos:definition "act of submitting a metadata item (3.23) for registration (3.40) in a metadata registry (3.26)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:submission-contact
+    a skos:Concept ;
+    skos:notation "3.55" ;
+    skos:prefLabel "submission contact"@en ;
+    skos:altLabel "submitter"@en ;
+    skos:definition "contact (3.7) information associated with a submission (3.54)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:submission-organization
+    a skos:Concept ;
+    skos:notation "3.56" ;
+    skos:prefLabel "submission organization"@en ;
+    skos:altLabel "submitting organization"@en , "SuO" ;
+    skos:definition "organization (3.30) that submits a metadata item (3.23) for registration (3.40)"@en ;
+    skos:note "In edition 2, the abbreviation used was SO. It has been changed in this edition because responsible organization was renamed to stewardship organization (StO)."@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
+
+:version
+    a skos:Concept ;
+    skos:notation "3.57" ;
+    skos:prefLabel "version"@en ;
+    skos:definition "unique version identifier (3.11) of the scoped identifier (3.50)"@en ;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:isDefinedBy cs: ;
+.
